@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LoopForge Game Testbed</title>
+  <meta name="description" content="LoopForge Game Corp public testbed for web-based game experiments." />
+  <style>
+    :root { color-scheme: dark; --bg:#080b12; --card:#121826; --text:#eef4ff; --muted:#aab6cc; --accent:#7cf7c8; --accent2:#8db5ff; }
+    * { box-sizing: border-box; }
+    body { margin:0; min-height:100vh; font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background: radial-gradient(circle at top left, #19304d 0, transparent 32rem), radial-gradient(circle at bottom right, #183c32 0, transparent 26rem), var(--bg); color:var(--text); display:grid; place-items:center; padding:32px; }
+    main { width:min(920px,100%); }
+    .hero { background:linear-gradient(135deg, rgba(255,255,255,.10), rgba(255,255,255,.035)); border:1px solid rgba(255,255,255,.14); border-radius:28px; padding:44px; box-shadow:0 24px 80px rgba(0,0,0,.35); }
+    .eyebrow { color:var(--accent); font-weight:800; letter-spacing:.14em; text-transform:uppercase; font-size:.8rem; }
+    h1 { font-size:clamp(2.4rem,6vw,5.4rem); line-height:.95; margin:18px 0; max-width:780px; }
+    p { color:var(--muted); font-size:1.12rem; line-height:1.65; max-width:700px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:30px; }
+    .card { background:rgba(18,24,38,.82); border:1px solid rgba(255,255,255,.10); border-radius:18px; padding:20px; }
+    .card strong { display:block; color:var(--text); margin-bottom:8px; }
+    .status { display:inline-flex; align-items:center; gap:10px; margin-top:28px; padding:12px 16px; border-radius:999px; background:rgba(124,247,200,.12); color:var(--accent); font-weight:700; }
+    .dot { width:10px; height:10px; border-radius:999px; background:var(--accent); box-shadow:0 0 18px var(--accent); }
+    footer { color:var(--muted); margin-top:18px; font-size:.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">LoopForge Game Corp</div>
+      <h1>Public testbed for fast web game experiments.</h1>
+      <p>This GitHub Pages site is the lightweight launchpad where LoopForge can publish playable prototypes, gather feedback, and validate which games deserve more investment.</p>
+      <div class="grid">
+        <div class="card"><strong>Games</strong><span>Playable experiments will appear here as they ship.</span></div>
+        <div class="card"><strong>Feedback</strong><span>Early testers can use this as the stable URL for trying builds.</span></div>
+        <div class="card"><strong>Source</strong><span>Private development remains in the LoopForge GitHub repositories.</span></div>
+      </div>
+      <div class="status"><span class="dot"></span><span>GitHub Pages test site is live-ready</span></div>
+    </section>
+    <footer>Temporary free hosting. A custom domain can be attached later.</footer>
+  </main>
+</body>
+</html>
